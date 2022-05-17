@@ -16,7 +16,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.30" />
+        app:layout_constraintVertical_bias="0.20"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/txtTimePicker"
@@ -29,7 +30,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMTimePicker"
-        app:layout_constraintVertical_bias="0.90" />
+        app:layout_constraintVertical_bias="0.90"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/etTimePicker"
@@ -48,7 +50,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMTimePicker"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="Autofill,TextFields" />
 
     <EditText
         android:id="@+id/etMTimePicker"
@@ -67,32 +70,35 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMTimePicker"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <Button
-        android:id="@+id/btnMTP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="materialTP"
-        android:textAllCaps="false"
-
-        app:layout_constraintBottom_toTopOf="@+id/txtMTimePicker"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="Autofill,TextFields" />
 
     <Button
         android:id="@+id/btnClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click"
+        android:text="Click to Share Time"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTimePicker"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="HardcodedText" />
 
+
+    <TextView
+        android:id="@+id/txtDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Picker"
+
+        app:layout_constraintBottom_toTopOf="@+id/etDatePicker"
+        app:layout_constraintEnd_toEndOf="@+id/etDatePicker"
+        app:layout_constraintStart_toStartOf="@+id/etDatePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnClick"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/etDatePicker"
