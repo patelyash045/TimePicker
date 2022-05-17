@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TimePicker</string>
+    <string name="hh_mm">HH:mm</string>
+    <string name="dd_MM_yyyy">dd/MM/yyyy</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Time Picker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30" />
+
+    <TextView
+        android:id="@+id/txtTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Picker"
+
+        app:layout_constraintBottom_toTopOf="@+id/etTimePicker"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMTimePicker"
+        app:layout_constraintVertical_bias="0.90" />
+
+    <EditText
+        android:id="@+id/etTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/hh_mm"
+        android:layout_marginHorizontal="30dp"
+        style="@style/common_edit_text"
+        android:textAlignment="center"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:background="@drawable/profile_edittext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMTimePicker"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/etMTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/hh_mm"
+        android:layout_marginHorizontal="30dp"
+        style="@style/common_edit_text"
+        android:textAlignment="center"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:background="@drawable/profile_edittext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMTimePicker"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <Button
+        android:id="@+id/btnMTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="materialTP"
+        android:textAllCaps="false"
+
+        app:layout_constraintBottom_toTopOf="@+id/txtMTimePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTimePicker"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <EditText
+        android:id="@+id/etDatePicker"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/profile_edittext"
+        android:textAlignment="center"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/dd_MM_yyyy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClick"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,RtlSymmetry,TextFields" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
